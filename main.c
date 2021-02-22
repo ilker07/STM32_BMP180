@@ -8,7 +8,7 @@
 extern uint32_t count;
 
 
-void SysTick_Handler(void)
+void SysTick_Handler(void)  //1 mslik timer interrupt
 {	
 	
 	count++;
@@ -20,7 +20,7 @@ int main()
 	
 {
 	
-  long a=20;
+
 	RCC_Config();
 	USART_Config();
 	SystemCoreClockUpdate();
