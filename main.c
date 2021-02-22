@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include "stm32f4xx.h"
 #include "bmp180_i2c.h"
 #include "uart.h"
