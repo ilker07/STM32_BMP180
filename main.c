@@ -14,10 +14,6 @@ void SysTick_Handler(void)
 	count++;
 }
 
-void yaz(const int *ptr)
-{
- printf("%d",*ptr);
-}
 
 
 int main()
@@ -28,10 +24,10 @@ int main()
 	RCC_Config();
 	USART_Config();
 	SystemCoreClockUpdate();
-	SysTick_Config(SystemCoreClock/1000);//1 mslik timer için.
+	SysTick_Config(SystemCoreClock/1000);//1 mslik timer iÃ§in.
 	
 	i2cislemler();
-	yaz(&a);
+	
 	
 	
 while(1)
